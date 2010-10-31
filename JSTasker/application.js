@@ -79,7 +79,8 @@ $(document).ready(function () {
     event.preventDefault();
     
     var task_text = $('input#task_text').val();
-    var list_item = $("<li>" + task_text + "</li>");
+    var task_category = $('input:checked').val().toUpperCase();
+    var list_item = $("<li>" + task_category + " - " + task_text + "</li>");
 
     list_item.click( function () {
       $(this).toggleClass('completed');
