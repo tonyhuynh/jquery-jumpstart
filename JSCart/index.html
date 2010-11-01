@@ -7,10 +7,12 @@
 
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js'></script>
 <script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="JSCart.js"></script>
 <script type="text/javascript" src="application.js"></script>
 </head>
 <body>
   <h1>Balloon-Animals-R-Us</h1>
+  <h5>Welcome, <span id='username'></span></h5>
   <div id="cart">
     <div class='cart_item' id='prototype_cart'>
         <h3></h3>
@@ -20,8 +22,8 @@
     <div class='totals'>
         <p><span id='cart_quantity'>0</span> items in cart</p>
         <p>$<span id='cart_price'>0</span> total</p>
+        <p><a href='#' id='clear_link'>(clear)</a></p>
     </div>
-
   </div>
   <div id="inventory">
       <div class='item' id="prototype_item">
